@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$FCFS Token Distribution</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .tasks button {
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .tasks button:hover {
+      background-color: #218838;
+    }
+
+    .tasks p {
+      margin: 20px 0 10px;
+      font-size: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>$FCFS Token Distribution</h1>
+    <p>Get your share of $FCFS tokens by completing tasks! Only a limited number of participants will receive tokens.</p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <h2>How It Works</h2>
+      <p>The $FCFS token distribution is a unique event where only the first <strong>X</strong> participants who complete tasks will receive tokens. The value of <strong>X</strong> will be randomly determined after all tasks are completed, ranging from 1 to 1,000,000 participants.</p>
+    </div>
+
+    <div class="section tasks">
+      <h2>Tasks to Complete</h2>
+      <p>Complete the following tasks to earn points and potentially receive tokens:</p>
+      <button onclick="completeTask('Subscribe to Twitter')">Subscribe to Twitter</button>
+      <button onclick="completeTask('Join Telegram Group')">Join Telegram Group</button>
+      <button onclick="completeTask('Share Post on Telegram')">Share Post on Telegram</button>
+
+      <p id="status"></p>
+    </div>
+
+    <div class="section">
+      <h2>Rules</h2>
+      <ul>
+        <li>Complete the tasks to earn points.</li>
+        <li>Only the first randomly selected <strong>X</strong> participants will receive tokens.</li>
+        <li>The value of <strong>X</strong> will be determined using random.org after all tasks are completed.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2024 $FCFS Token Project | All Rights Reserved</p>
+  </div>
+
+  <script>
+    function completeTask(taskName) {
+      document.getElementById('status').textContent = 'Task "' + taskName + '" completed! You earned points.';
+    }
+  </script>
+
+</body>
+</html>
